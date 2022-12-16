@@ -1,0 +1,127 @@
+* {
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --main-margin: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  background-image: url("../images/pattern-background-desktop.svg");
+}
+
+@media (max-width:700px) {
+  body {
+
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+
+.card {
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+}
+
+.card .card-picture {}
+
+.card .card-picture img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card .card-info {
+  margin: 25px;
+}
+
+.card .card-info h1 {
+  margin-bottom: var(--main-margin);
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+.card .card-info .intro {
+  line-height: 1.6;
+  color: var(--Desaturated-blue);
+  margin-bottom: var(--main-margin);
+}
+
+.card .card-info .plan {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card .card-info .plan {
+  margin-bottom: var(--main-margin);
+}
+
+.card .card-info .plan .plan-info {}
+
+.card .card-info .plan .plan-info p:first-of-type {
+  margin-bottom: 2px;
+  font-weight: 900;
+  color: var(--Dark-blue);
+  text-align: left;
+}
+
+.card .card-info .plan .plan-info p:last-of-type {
+  color: var(--Dark-blue);
+  font-size: 15px;
+  text-align: left;
+}
+
+.card .card-info .plan .plan-icon {}
+
+.card .card-info .plan .plan-icon img {}
+
+.card .card-info .plan .change:hover a {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+}
+
+.card .card-info .cancel {
+  color: var(--Desaturated-blue);
+
+}
+
+.card .card-info .cancel:hover {
+  color: var(--Dark-Blue);
+}
+
+.card .card-info .payement {
+  background-color: var(--Bright-blue);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: var(--main-margin);
+  font-weight: 700;
+
+}
+
+.card .card-info .payement:hover {
+  background-color: var(--Desaturated-blue);
+}
