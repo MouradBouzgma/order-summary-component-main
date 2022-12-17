@@ -42,8 +42,6 @@ body {
   text-align: center;
 }
 
-.card .card-picture {}
-
 .card .card-picture img {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
@@ -79,7 +77,6 @@ body {
   margin-bottom: var(--main-margin);
 }
 
-.card .card-info .plan .plan-info {}
 
 .card .card-info .plan .plan-info p:first-of-type {
   margin-bottom: 2px;
@@ -94,9 +91,6 @@ body {
   text-align: left;
 }
 
-.card .card-info .plan .plan-icon {}
-
-.card .card-info .plan .plan-icon img {}
 
 .card .card-info .plan .change:hover a {
   text-decoration: none;
